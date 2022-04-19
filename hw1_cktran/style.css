@@ -1,0 +1,109 @@
+body {
+    font-family: VT323;
+}
+
+#header {
+    border-top: 3px solid #BBBBBB;
+    border-bottom: 3px solid #BBBBBB;
+    height: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #2C4762;
+}
+
+#header_text {
+    color: #DAF1FC;
+    padding: 0;
+    position: fixed;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    left: 0;
+    right: 0;
+}
+
+img.award {
+    position: fixed;
+    width: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+#left {
+    left: 0;
+}
+
+#right {
+    right: 0;
+}
+
+#event_info {
+    margin-left: 10px;
+    margin-top: 210px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 28px;
+}
+
+#event_title {
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+#act_section {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+#winner {
+    display: inline-block;
+    padding: 10px;
+    border: solid 3px #2C4762;
+    box-shadow: 0px 0px 5px 5px #2C4762;
+    width: 400px;
+    height: 390px;
+}
+
+#nominee {
+    display: inline-block;
+    padding: 10px;
+    border: solid 3px transparent;
+    width: 400px;
+    height: 390px;
+}
+
+img.act_img {
+    width: 400px;
+    height: 320px;
+    object-fit: cover;
+}
+
+h1 {
+    text-align: left;
+    font-size: 24px;
+}
+
+hr {
+    height: 2px;
+    background-color: #BBBBBB;
+    color: #BBBBBB;
+    border: none;
+}
+
+p {
+    text-align: center;
+    margin-top: 3px;
+}
+
+ul {
+    list-style-type: disc;
+    font-weight: bold;
+}

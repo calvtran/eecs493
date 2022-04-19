@@ -1,0 +1,645 @@
+
+/* Main Containers */
+body, button {
+    font-family: VT323;
+}
+
+button {
+    font-size: xx-large;
+}
+
+.outer-container {
+    height: 720px;
+    width: 1280px;
+    background: #eee;
+    border: 5px solid gainsboro;
+  }
+  .game-window {
+    height: 720px;
+    width: 1280px;
+    float: left;
+    position: relative;
+  }
+
+  #actualGame {
+    height: 720px;
+    width: 1280px;
+  }
+
+#mainMenu img {
+
+}
+
+  .mainMenuBackground img{
+    width: 1280px;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+  }
+
+  #tutorial {
+      left: 340px;
+      top: 25px;
+      text-align: center;
+      background-color: #A00;
+      position: absolute;
+      font-size: 50px;
+      width: 590px;
+      height: 660px;
+      border: 5px groove;
+  }
+
+    #tutorial img {
+        width: 100px;
+    }
+
+    #tutorial p, #tutorial h2 {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    #tutorial button {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 200px;
+        height: 75px;
+        background-color: gold;
+        border: 7px groove;
+    }
+  
+  .game_name a{
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    right: 50%;
+    width: 100%;
+    height: 100px;
+    background-color: #800;
+    border: 6px;
+    border-style: groove;
+    color: #CCC;
+    vertical-align: middle;
+    font-size: 100px;
+    transform: translate(50%, 0%);
+    padding-bottom: 20px;
+  }
+  
+  /* Scenery */
+  
+  .splash {
+    height: 594px;
+    width: 497px;
+    background: rgb(128,0,128);
+    border: 3px solid green;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+  }
+  
+  .splash i{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 550px;
+    font-size: 40px;
+    color: yellow;
+  }
+  
+  .Set_Box {
+    padding-top: 100px;
+  }
+  
+  .Set {
+    align-items: center;
+    z-index: 2;
+    top: 500px;
+    right: 50%;
+    position: absolute;
+  }
+
+  .Set button {
+    width: 200px;
+    height: 100px;
+    background-color: #A00;
+    transform: translate(50%, 0%);
+  }
+
+  #Setting {
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 700px;
+    background-color: blue;
+    z-index: 100;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  #Setting a{
+    top: 500px;
+    background-color: blue;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    right: 50%;
+    width: 100%;
+    height: 50px;
+    color: white;
+    vertical-align: middle;
+    font-size: xxx-large;
+    transform: translate(50%, 0%);
+  }
+
+  .Play {
+    align-items: center;
+    z-index: 2;
+    top: 200px;
+    right: 50%;
+    position: absolute;
+  }
+
+  .Play button {
+    background-color: #A00;
+    width: 200px;
+    height: 100px;
+    transform: translate(50%, 0%);
+  }
+  
+  .Leaderboard_menu {
+    align-items: center;
+    z-index: 2;
+    top: 350px;
+    right: 50%;
+    position: absolute;
+  }
+
+  .Leaderboard_menu button {
+    background-color: #A00;
+    width: 200px;
+    height: 100px;
+    transform: translate(50%, 0%);
+  }
+
+  #Leaderboard {
+    top: 175px;
+    align-items: center;
+    right: 50%;
+    transform: translate(50%, 0%);
+    background-color: #A00;
+    z-index: 10;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  #Leaderboard h1 {
+    font-size: 25px;
+    margin-block-start: 0.7em;
+    margin-block-end: 0.60em;
+  }
+
+  #EnterScore {
+    top: 300px;
+    align-items: center;
+    right: 50%;
+    transform: translate(50%, 0%);
+    background-color: #A00;
+    z-index: 10;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .Credits {
+    align-items: center;
+    z-index: 2;
+    top: 635px;
+    left: 85%;
+    position: absolute;
+  }
+
+  .Credits button {
+    background-color: #A00;
+    width: 105px;
+    height: 50px;
+    transform: translate(50%, 0%);
+  }
+
+  .Credit_Page {
+    top: 175px;
+    align-items: center;
+    right: 50%;
+    transform: translate(50%, 0%);
+    background-color: #A00;
+    z-index: 10;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .Credit_Page h1 {
+    margin-block-start: 0.15em;
+    margin-block-end: 0.15em;
+    border-top: 10px;
+    font-size: 75px;
+  }
+
+  .Credit_Page h2 {
+    font-size: 35px;
+    margin-block-start: 0.15em;
+    margin-block-end: 0.15em;
+  }
+
+  .Credit_Page h3 {
+    font-size: 25px;
+    margin-block-start: 3.00em;
+    margin-block-end: 0.60em;
+  }
+
+
+  .Exit {
+    align-items: center;
+    z-index: 2;
+    top: 550px;
+    right: 50%;
+    position: absolute;
+  }
+
+  .Exit button {
+    background-color: red;
+    width: 200px;
+    height: 100px;
+    font-size: larger;
+    transform: translate(50%, 0%);
+  }
+
+  
+  .CloseSet {
+    z-index: 2;
+    width: auto;
+    height: 200px;
+    background: #feb;
+  }
+  
+  .Panel{
+    z-index: 1;
+    background: #feb;
+    width: 297px;
+    height: 200px;
+    position: absolute;
+  }
+  
+  .inTime{
+    width: 50px;
+  }
+
+  
+
+  /*SLIDER TAKEN FROM W3schools*/
+  .slidecontainer {
+    width: 80%; /* Width of the outside container */
+    padding-left: 60px;
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    top: 210px;
+    position: relative;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  
+
+  .Difficulty {
+    align-items: center;
+    z-index: 2;
+    top: 330px;
+    position: relative;
+    right: -26px;
+    display:inline-block;
+  }
+
+    .Difficulty button {
+        background-color: #A00;
+        width: 180px;
+        height: 100px;
+    }
+
+  .Selected {
+    align-items: center;
+    z-index: 2;
+    top: 370px;
+    position: relative;
+    right: -26px;
+    display:inline-block;
+  }
+
+  .Selected button {
+    background-color: red;
+    border-color: gold;
+    border-radius: 10px;
+    border-width: 10px;
+    width: 180px;
+    height: 100px;
+  }
+
+  .Return {
+    align-items: center;
+    z-index: 2;
+    top: 560px;
+    position: absolute;
+    right: 50%;
+    display:inline-block;
+    transform: translate(50%, 0%);
+  }
+
+    .Return button {
+        background-color: #A00;
+        width: 180px;
+        height: 100px;
+    }
+
+    #GetReady {
+        top: 0px;
+        z-index: 10;
+        font-size: 100px;
+        position: absolute;
+        text-align: center;
+        width: 1280px;
+        height: 720px;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+    }
+
+    .welcome {
+        position: absolute;
+        font-size: 50px;
+        z-index: 5;
+        text-align: center;
+        font-size: 50px;
+        color: white;
+    }
+
+    .ast_welcome {
+        top: 150px;
+        left: 400px;
+    }
+
+    .gal_welcome {
+        width: 628px;
+        height: 720px;
+        background: black;
+        left: 325px;
+        top: 0px;
+    }
+
+    .welcome h2 {
+        font-weight: initial;
+        margin-bottom: 50px;
+    }
+
+    .welcome p {
+        margin-top: 5px;
+    }
+
+    .welcome img {
+        width: 250px;
+    }
+  /* Galaga portion */
+
+  .galagaSection {
+    overflow: hidden;
+  }
+
+  #scoreword {
+      text-align:center;
+      font-size: 60px;
+  }
+
+  #scorenumber {
+      text-align:center;
+      font-size:40px;
+      color:yellow;
+  }
+  
+  
+
+  #covidDanger {
+      
+      text-align:center;
+      font-size: 60px;
+  }
+
+  #covDangerNumber {
+      text-align:center;
+      font-size:40px;
+      color:yellow;
+  }
+
+#level {
+    text-align: center;
+    font-size: 60px;
+}
+
+#covLevel {
+    text-align: center;
+    font-size: 40px;
+    color: yellow;
+}
+
+#gameBorderRight {
+    height: 600px;
+    width: 320px;
+    position: absolute;
+    left: 960px;
+    top: 0px;
+    color: white;
+    z-index: 1;
+}
+
+
+  #galagaBorderRight {
+    height: 100%;
+    width: 320px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: darkslategray;
+    z-index: 1;
+    border-right: 8px groove #c1c1c1;
+  }
+
+#galagaBorderLeft {
+    height: 100%;
+    width: 320px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: darkslategray;
+    z-index: 1;
+    border-left: 8px groove #c1c1c1;
+}
+
+  #galScrollingBackgroundCont {
+    overflow: hidden;
+    position: relative;
+    height: 720px;
+  }
+
+  #galScrollingBackground{
+    background: url("/src/storeBackground.png") repeat-x;
+    height: 10000px;
+    bottom: 0px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .galSpawnedEntities {
+    overflow: hidden;
+    position: absolute;
+    height: 720px;
+    width: 1280px;
+    top: 0px;
+    left: 0px;
+  }
+
+  .galShip {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    /*background: url("/src/ship.png")*/
+  }
+
+  .galShot {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+  }
+
+.galCovMet {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+.galCovMet img {
+    position: relative;
+    z-index: 10;
+    height: 80px;
+    left: -17px;
+    top: -15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+  /* Asteroids portion*/
+
+.asteroidSection {
+    height: 720px;
+    width: 1280px;
+    background-color: black;
+    z-index: 10;
+    right: 0px;
+    top: 0px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.curAstroid {
+    position: absolute;
+    height: 42px;
+    width: 42px;
+    z-index: 9;
+    right: 0px;
+    top: 0px;
+}
+.astBorderRight {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    left: 920px;
+   padding-left: 900px;
+}
+  .curAstroid img{
+      position: relative;
+      z-index: 10;
+      height: 80px;
+      left: -17px;
+      top: -15px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+  }
+
+  #player {
+      position: absolute;
+      width: 62px;
+      left: 600px;
+      top: 300px;
+      z-index: 9;
+  }
+
+  .mask {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      z-index: 9;
+  }
+
+    .mask img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70px;
+        height: 33px;
+        display: block;
+        position: relative;
+        z-index: 10;
+    }

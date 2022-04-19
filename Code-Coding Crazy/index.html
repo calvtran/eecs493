@@ -1,0 +1,115 @@
+<html>
+
+<title>Avoid Covid</title>
+
+<!-- JS -->
+<script src='scripts/jquery.min.js'></script>
+<script src='scripts/page.js'></script>
+
+<!-- Vue -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="style/main_menu.css">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+<!-- HTML -->
+<body>
+  <div class='outer-container'>
+      <div class='game-window'>
+          
+          <div id="mainMenu">
+            <div class="mainMenuBackground">
+              <!--https://unsplash.com/@fusion_medical_animation-->
+              <img src="src/fusion-medical-animation-rnr8D3FNUNY-unsplash.jpg"></img>
+            </div>
+
+
+              <div class='game_name'><a>Covid Comets</a></div>
+
+            <div id='menu_buttons'>
+
+                <div id='setButton' class='Play'> <button type='Settings' onClick='play1()'>Play game!</button> </div>
+                <div id='board' class='Leaderboard_menu'> <button type='Settings' onClick='show_leader_board()'>Leaderboard</button> </div>
+                <div id='setButton' class='Set'> <button type='Settings' onClick='show_set()'>Settings</button> </div>
+                <div id='creds' class='Credits'> <button type='Cred_Button' onClick='show_credits()'>Credits</button> </div>
+            </div>
+
+              <div id='cred_region' class='Credit_Page'></div>
+              
+          </div>
+
+          <div id="tutorial">
+              <h2>How to play</h2>
+              <p>Avoid COVID particles!</p><img src="src/covidstriod1.png" />
+              <br />
+              <p>Collect masks and vaccines!</p>
+              <img src="src/mask.gif" style="width: 150px; margin-right: 50px;"/><img src="src/vacc.gif" /><br />
+              <p style="font-size: 30px; margin-bottom: 0px; margin-top: 10px;">Press Esc to pause and open Settings</p>
+              <button type='button' onclick='play2()'>Start</button>
+          </div>
+
+          <div id="Leaderboard"> </div>
+
+          <div id="EnterScore">
+              <h2>Congrats you made it on the top 10 leaderboard!</h2>
+              <br>
+              <h2>Enter your name!</h2>
+              <input type="text" id="ScoreInput" value="">
+              <button type='subButton' onClick='submitName()'>Submit Name</button>
+        </div>
+
+          <div id="actualGame">
+              <!-- <div id='setButton' class='Exit'> <button type='Settings' onClick='show_set()'>Leave Game</button> </div> -->
+
+              <div class="asteroidSection">
+                
+                  <div class="curAstroid">
+
+                  </div>
+
+
+              </div>
+
+
+              <div class="galagaSection">
+
+                  <div id="galagaBorderRight">
+
+                  </div>
+
+                  <div id="galagaBorderLeft">
+
+                  </div>
+
+                  <div id="galScrollingBackgroundCont">
+                      <div id="galScrollingBackground"></div>
+                  </div>
+
+                  <div class='galShip'>
+                  </div>
+
+                  <div class="galSpawnedEntities">
+
+                  </div>
+
+              </div>
+
+              <div id="gameBorderRight">
+                  <div id="scoreword">
+                      SCORE
+                      <div id="scorenumber">0</div>
+                  </div>
+                  <div id="covidDanger">COVID DANGER
+                  <div id="covDangerNumber"></div></div>
+                  <div id="level">LEVEL
+                  <div id="covLevel"></div></div>
+              </div>
+          </div>
+      </div> <!-- end game-window -->
+
+
+  </div> <!-- end outer-container -->
+</body>
+
+</html>
